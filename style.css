@@ -78,23 +78,34 @@ body {
 /* CSS for the Intro Section */
 
 .intro__container {
-    background-image: url('/images/intro__image.jpeg');
-    background-size: cover;
     height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    position: relative;
 }
 
-.intro__text {
-    background-color: rgb(255, 255, 255, 0.75);
+.intro__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.intro__content {
     width: 600px;
     height: 200px;
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.75);
     display: block;
     border-radius: 50px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -100px;
 }
 
-.intro__text h3 {
+.intro__content h3 {
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     color: #000;
@@ -103,7 +114,7 @@ body {
     padding: 25px 0 0 0;
 }
 
-.intro__text p {
+.intro__content p {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     color: #000;
@@ -170,5 +181,70 @@ body {
 }
 
 .services__button:hover {
+    background-color: rgb(0, 136, 169, 0.8);
+}
+
+/* CSS for the About Section */
+
+.about__container {
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+.about__img {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+}
+
+.about__content {
+    position: absolute;
+    display: flex;
+}
+
+.about__team {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 600px;
+}
+
+.about__text {
+    position: absolute;
+    display: block;
+    background-color: rgb(255, 255, 255, 0.75);
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    top: 50%;
+    margin-top: -125px;
+    left: 21%;
+    margin-left: -250px;
+    border-radius: 50px;
+}
+
+.about__text h3 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 48px;
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+
+.about__button {
+    background-color: rgb(0, 136, 169, 1);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ecf0f1;
+    margin: 175px 0 0 0;
+}
+
+.about__button:hover {
     background-color: rgb(0, 136, 169, 0.8);
 }
