@@ -404,3 +404,43 @@ li, .footer__opt {
 .catagory__container:hover {
     background-color: #f0f0f4;
 }
+
+/* CSS for the about page */
+
+.about__container {
+    width: 100%;
+    height: 800px;
+    display: block;
+}
+
+.tutors {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tutor__img {
+    width: 250px;
+    border-radius: 125px;
+}
+
+.tutor__para {
+    width: 50%;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 18px;
+}
+
+.about__para {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 30px;
+    padding: 20px 0 20px 0;
+}
+
+.tutor__one, .tutor__two {
+    display: flex;
+}
