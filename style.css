@@ -460,3 +460,45 @@ li, .footer__opt {
     border-radius: 200px;
 
 }
+
+/* Contact Page CSS */
+
+.contact__form {
+    width: 80%;
+    display: grid;
+    background-color: #fff;
+    align-self: center;
+    margin: 0 10% 0 10%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact__item {
+    display: block;
+}
+
+.contact__heading {
+    text-align: center;
+}
+
+.contact__subheader {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #000;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.contact__header {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 48px;
+    font-style: underline;
+    padding: 10px 0 10px 0;
+}
+
+.full__width {
+    grid-column: span 2;
+}
