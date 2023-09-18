@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us Page</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -22,20 +22,30 @@
         </nav>
         <button class="nav__button">Contact Us</button>
     </header>
-    <!-- About Body -->
-    <div class="about__container--page">
-        <p class="about__para">Our team at P & L tutors consists of two tutors who have a passion for helping students succeed. See below to meet our team! </p>
-        <div class="tutors">
-            <div class="tutor__one">
-                <p class="tutor__para">Patrick is a recent graduate from Drexel University. He has a BS in Mechanical Engineering and a MS in Engineering Management. Patrick specializes in STEM tutoring and SAT/ACT Math assistance. Outside of tutoring, Patrick is a Systems Engineer in the Aerospace Industry and loves playing soccer and watching sports!</p>
-                <img src="/images/patrick__image.jpg" alt="Patrick Image" class="tutor__img">
-            </div>
-            <div class="tutor__two">
-                <p class="tutor__para">Lauren is a recent graduate from West Chester University. She has a BS in Marketing and a MS in Human Resources. Lauren specializes in English/Language tutoring, SAT/ACT english assistance, and College counceling. Outside of tutoring, Lauren is a HR Representative in the Fintech Industry and loves playing pickleball and taking care of animals!</p>
-                <img src="/images/lauren__image.jpg" alt="Lauren Image" class="tutor__img">
-            </div>
+    <!-- Contact Form -->
+    <h1 class="contact__header">Contact Us!</h1>
+    <h3 class="contact__subheader">Have a question or want to use our services? Fill out the form below and we will get back to you!</h3>
+    <form class="contact__form">
+        <div class="contact__form">
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" placeholder="John" name="fname" required>
+            <br><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" placeholder="Doe" name="lname" required>
+            <br><br>
+            <label for="email">Email: </label>
+            <input type= "email" id="email" placeholder="johndoe123@gmail.com" name="email" required>
+            <br><br>
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" placeholder="(123) 456 - 7890" name="phone">
+            <br><br>
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <br><br>
+            <button type="reset">Reset</button>
+            <button type="submit" class="submit__btn">Submit</button>
         </div>
-    </div>
+    </form>
     <!-- Footer Section -->
     <footer>
         <div class="footer__container">
@@ -55,7 +65,7 @@
             </ul>
             <ul class="footer__col">
                 <li class="footer__head"><strong>More to Come!</strong></li>
-                <li><a href="/index.html" class="footer__opt">Return Home</a></li>
+                <li><a href="/index.html" class="footer__opt">Return to the Top</a></li>
             </ul>
         </div>
     </footer>
