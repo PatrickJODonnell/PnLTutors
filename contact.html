@@ -29,30 +29,33 @@
     </div>
     <form>
         <div class="contact__form">
-            <div class="contact__item">
-                <label for="fname">First Name: </label>
+            <div class="contact__item1 contact__item">
+                <label for="fname">*First Name: </label>
                 <input type="text" id="fname" placeholder="John" name="fname" required>
             </div>
-            <div class="contact__item">
-                <label for="lname">Last Name: </label>
+            <div class="contact__item2 contact__item">
+                <label for="lname">*Last Name: </label>
                 <input type="text" id="lname" placeholder="Doe" name="lname" required>
             </div>
-            <div class="contact__item">
-                <label for="email">Email: </label>
+            <div class="contact__item3 contact__item">
+                <label for="email">*Email: </label>
                 <input type= "email" id="email" placeholder="johndoe123@gmail.com" name="email" required>
             </div>
-            <div class="contact__item">
-                <label for="phone">Phone: </label>
+            <div class="contact__item4 contact__item">
+                <label for="phone"> Phone: </label>
                 <input type="tel" id="phone" placeholder="(123) 456 - 7890" name="phone">
             </div>
-            <div class="contact__item full__width">
-                <label for="message">Message: </label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <div class="contact__item5 contact__item">
+                <label for="message">*Message: </label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
             </div>
-            <div class="contact__item">
-                <button type="reset">Reset</button>
+            <div class="contact__item6 contact__item">
+                <button type="reset" class="reset__btn">Reset</button>
+            </div>
+            <div class="contact__item7 contact__item">
                 <button type="submit" class="submit__btn">Submit</button>
             </div>
+            <p class="extra__info">* Indicates a required field</p>
         </div>
     </form>
     <!-- Footer Section -->

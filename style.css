@@ -464,17 +464,57 @@ li, .footer__opt {
 /* Contact Page CSS */
 
 .contact__form {
-    width: 80%;
+    width: 60%;
     display: grid;
     background-color: #fff;
     align-self: center;
-    margin: 0 10% 0 10%;
+    margin: 20px 20% 20px 20%;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'fname lname'
+    'email phone'
+    'message message'
+    'reset submit'
+    'extra extra';
+    border: 2px;
+    border-style: solid;
 }
 
-.contact__item {
-    display: block;
+.contact__item1 {
+    grid-area: fname;
+    justify-self: end;
 }
+
+.contact__item2 {
+    grid-area: lname;
+    justify-self: start;
+}
+
+.contact__item3 {
+    grid-area: email;
+    justify-self: end;
+}
+
+.contact__item4 {
+    grid-area: phone;
+    justify-self: start;
+}
+
+.contact__item5 {
+    grid-area: message;
+    justify-self: center;
+}
+
+.contact__item6 {
+    grid-area: reset;
+    justify-self: end;
+}
+
+.contact__item7 {
+    grid-area: submit;
+    justify-self: start;
+}
+
 
 .contact__heading {
     text-align: center;
@@ -499,6 +539,46 @@ li, .footer__opt {
     padding: 10px 0 10px 0;
 }
 
-.full__width {
-    grid-column: span 2;
+input {
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    background-color: #ecf0f1;
 }
+
+.contact__item {
+    margin: 20px;
+}
+
+textarea {
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    background-color: #ecf0f1;
+    height: 350px;
+    width: 500px;
+}
+
+.contact__item label {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+}
+
+.submit__btn, .reset__btn {
+    width: 100px;
+    height: 25px;
+    background-color: #ecf0f1;
+    cursor: pointer;
+}
+
+.extra__info{
+    grid-area: extra;
+    justify-self: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+}
+
