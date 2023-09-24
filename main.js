@@ -1,5 +1,4 @@
 // Function for the contact submit button
-const nodemailer = require('nodemailer');
 function gather__info () {
     let fname = document.getElementById('fname').value;
     let lname = document.getElementById('lname').value;
@@ -13,30 +12,16 @@ function gather__info () {
     document.getElementById('email').value = '';
     document.getElementById('phone').value = '';
     document.getElementById('message').value = '';
-    async function sendEmail() {
-        try {
-          const transporter = nodemailer.createTransport({
-            service: 'Gmail',
-            auth: {
-              user: 'messagepnl@gmail.com',
-              pass: 'BaSkEtBaLl22@@'
-            }
-          });
-      
-          const mailOptions = {
-            from: 'messagepnl@gmail.com',
-            to: 'patrickjodonnell@comcast.net',
-            subject: 'Hello',
-            text: 'This is the body of the email.'
-          };
-      
-          const info = await transporter.sendMail(mailOptions);
-          console.log('Email sent:', info.messageId);
-        } catch (error) {
-          console.error('Error occurred:', error);
-        }
-    }
-    sendEmail();
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "messagepnl@gmail.com",
+        Password : "DA724F805BD6CE752D72DD643188FBA84926",
+        To : 'laurencoop27@gmail.com',
+        From : "messagepnl@gmail.com",
+        Subject : "Someone wants our services!",
+        Body : fname + " " + lname + " with an email of " + email + " has said this: " + message 
+    })
 };
 
 function reset__info() {
