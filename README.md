@@ -5,4 +5,5 @@ The files within this repository contain the files responsible for running and d
 This website was developed by myself (Patrick O'Donnell) as a way to both build my web development portfolio and to increase the business opportunities of P&L Tutors. This is my first web-development project in a series of many! 
 
 The URL of the site is: https://pnl-tutors.com/
+<br/>
 NOTE: THIS SITE HAS NOT YET BEEN OPTIMIZED FOR MOBILE
